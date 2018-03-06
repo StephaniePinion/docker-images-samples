@@ -6,15 +6,4 @@ jobs:
     steps:
       - checkout
       - run: <command>
-  test:
-    docker:
-      - image: katalonstudio/katalon
-    steps:
-      - checkout
-      - run: <command>
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test
+
